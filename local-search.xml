@@ -4,13 +4,27 @@
   
   
   <entry>
-    <title></title>
+    <title>第一篇笔记</title>
     <link href="/2024/04/06/%E7%AC%AC%E4%B8%80%E7%AF%87%E7%AC%94%E8%AE%B0/"/>
     <url>/2024/04/06/%E7%AC%AC%E4%B8%80%E7%AF%87%E7%AC%94%E8%AE%B0/</url>
     
-    <content type="html"><![CDATA[<p>title: 第一篇笔记</p><p>tags: [标签1,标签2]</p><p>categories [分类]</p><p>index_img: .\Capture001.png</p><p>date: 2024-4-06</p>]]></content>
+    <content type="html"><![CDATA[]]></content>
     
     
+    <categories>
+      
+      <category>记录</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>标签1</tag>
+      
+      <tag>标签2</tag>
+      
+    </tags>
     
   </entry>
   
