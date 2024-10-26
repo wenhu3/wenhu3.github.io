@@ -16,26 +16,27 @@
   <meta name="author" content="胡文">
   <meta name="keywords" content="">
   
-    <meta name="description" content="前言​		先自我介绍一下吧，97年的后端男程序员一枚，毕业几年一直浑浑噩噩的直到27岁这年，看完一本书后突然觉醒了，感觉人生要换个活法，于是乎得搞个地方记录一下。好歹我也是个程序员，总不能写QQ空间吧，一番鼓捣下也是初步把个人博客给弄出来了，这也是我在博客上正式写的第一篇文章，文笔肯定会很稚嫩，结构八成也不清晰，但求能表达清楚我的意思就好。 为什么说我被夺舍了呢？因为自从看了《认知觉醒》这本书后，">
+    <meta name="description" content="开始创建一个新的后端项目，最开始的一部，分模块，然后配置pom文件，遇到了第一个问题； 1 子类pom继承不了父类pom 解决方式：这个错误信息表明你的子模块的POM文件中指定的父POM的打包方式（packaging）不正确。在Maven中，当你定义一个父POM时，它的packaging类型应该是”pom”，因为父POM通常不包含可执行代码，而是用于定义构建和依赖管理的规则。 在你的父POM文件中">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前言-认知觉醒读后感">
-<meta property="og:url" content="http://wenhu3.github.io/2024/04/07/%E5%89%8D%E8%A8%80-%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92%E8%AF%BB%E5%90%8E%E6%84%9F/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://wenhu3.github.io/2024/10/25/day1/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="前言​		先自我介绍一下吧，97年的后端男程序员一枚，毕业几年一直浑浑噩噩的直到27岁这年，看完一本书后突然觉醒了，感觉人生要换个活法，于是乎得搞个地方记录一下。好歹我也是个程序员，总不能写QQ空间吧，一番鼓捣下也是初步把个人博客给弄出来了，这也是我在博客上正式写的第一篇文章，文笔肯定会很稚嫩，结构八成也不清晰，但求能表达清楚我的意思就好。 为什么说我被夺舍了呢？因为自从看了《认知觉醒》这本书后，">
+<meta property="og:description" content="开始创建一个新的后端项目，最开始的一部，分模块，然后配置pom文件，遇到了第一个问题； 1 子类pom继承不了父类pom 解决方式：这个错误信息表明你的子模块的POM文件中指定的父POM的打包方式（packaging）不正确。在Maven中，当你定义一个父POM时，它的packaging类型应该是”pom”，因为父POM通常不包含可执行代码，而是用于定义构建和依赖管理的规则。 在你的父POM文件中">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://wenhu3.github.io/img/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/%E5%B0%81%E9%9D%A2.jpg">
-<meta property="article:published_time" content="2024-04-07T12:58:03.000Z">
-<meta property="article:modified_time" content="2024-04-08T15:24:09.150Z">
+<meta property="og:image" content="http://wenhu3.github.io/........%5Cimg%5C%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%5C1729781683429.png">
+<meta property="og:image" content="http://wenhu3.github.io/........%5Cimg%5C%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%5C1729783994694.png">
+<meta property="og:image" content="http://wenhu3.github.io/........%5Cimg%5C%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%5C1729784215160.png">
+<meta property="og:image" content="http://wenhu3.github.io/........%5Cimg%5C%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%5C1729784294886.png">
+<meta property="og:image" content="http://wenhu3.github.io/........%5Cimg%5C%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%5C1729786526538.png">
+<meta property="article:published_time" content="2024-10-24T16:26:52.906Z">
+<meta property="article:modified_time" content="2024-10-24T16:15:47.411Z">
 <meta property="article:author" content="胡文">
-<meta property="article:tag" content="认知觉醒">
-<meta property="article:tag" content="感悟">
-<meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://wenhu3.github.io/img/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/%E5%B0%81%E9%9D%A2.jpg">
+<meta name="twitter:image" content="http://wenhu3.github.io/........%5Cimg%5C%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%5C1729781683429.png">
   
   
   
-  <title>前言-认知觉醒读后感 - Hexo</title>
+  <title>Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -201,7 +202,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="前言-认知觉醒读后感"></span>
+            <span id="subtitle" data-typed-text=""></span>
           
         </div>
 
@@ -212,8 +213,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-04-07 20:58" pubdate>
-          2024年4月7日 晚上
+        <time datetime="2024-10-25 00:26" pubdate>
+          2024年10月25日 凌晨
         </time>
       </span>
     
@@ -224,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          616 字
+          289 字
         
       </span>
     
@@ -235,7 +236,7 @@
         
         
         
-          6 分钟
+          3 分钟
         
       </span>
     
@@ -272,40 +273,22 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">前言-认知觉醒读后感</h1>
+            <h1 id="seo-header"></h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>​		先自我介绍一下吧，97年的后端男程序员一枚，毕业几年一直浑浑噩噩的直到27岁这年，看完一本书后突然觉醒了，感觉人生要换个活法，于是乎得搞个地方记录一下。好歹我也是个程序员，总不能写QQ空间吧，一番鼓捣下也是初步把个人博客给弄出来了，这也是我在博客上正式写的第一篇文章，文笔肯定会很稚嫩，结构八成也不清晰，但求能表达清楚我的意思就好<img src="/img/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/004AF12E.png" srcset="/img/loading.gif" lazyload>。</p>
-<p>为什么说<strong>我被夺舍了</strong>呢？因为自从看了《认知觉醒》这本书后，我突然变了个人。从前的我</p>
-<ul>
-<li><p>晚上熬夜，早上起床困难户；</p>
-</li>
-<li><p>死宅，想出去逛逛都做半天思想斗争；</p>
-</li>
-<li><p>懒癌+拖延症晚期，房间懒得打扫，吃完饭懒得洗碗，凡事不是拖到不得不干就拖在那，晚上列出第二天一堆想要干的事，结果第二天看着乱糟糟的脑子和乱糟糟的房间还是选择打游戏去了；</p>
-</li>
-<li><p>专注力差，没有耐心，干十分钟摸鱼十分钟，没有执行力；</p>
-</li>
-<li><p>间歇性打鸡血踌躇满志，持续性混吃等死；</p>
-</li>
-<li><p>等等等等</p>
-<p>看了《认知觉醒》后</p>
-</li>
-<li><p>早睡早起，运动完还得看会书；</p>
-</li>
-<li><p>没事总想去看看自然风光，出去溜达溜达，找个微风拂面、春意盎然的地方看看书；</p>
-</li>
-<li><p>完全获得了身体的控制权，想去洗碗就洗碗，想打扫房间就打扫房间，感受到了灵魂的自由，而且整个过程轻松愉悦；</p>
-</li>
-<li><p>明确想干的事，一次把一件事干好，休息时专注休息，干活时专注干活，读书时专注读书，走路时专注走路。。。</p>
-</li>
-<li><p>底层认知改变，不需要靠鸡汤、意志力来强迫自己做某些事；</p>
-</li>
-</ul>
-<p>是不是挺邪乎的，今天是接触这本书的第十天，在出差的酒店里抽出时间写的这篇文章，这篇文章并非书中观点的总结，而是结合书本大纲和我个人体验的一些感悟，部分观点有待商榷仅供参考，内容并非经过严谨论证，有时间可以读一下原著，相信每个人都能从中悟得自己的<strong>觉醒之道</strong>。</p>
-<p>​	</p>
+                <p>开始创建一个新的后端项目，最开始的一部，分模块，然后配置pom文件，遇到了第一个问题；</p>
+<h3 id="1-子类pom继承不了父类pom"><a href="#1-子类pom继承不了父类pom" class="headerlink" title="1 子类pom继承不了父类pom"></a>1 子类pom继承不了父类pom</h3><p><img src="/........%5Cimg%5C%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%5C1729781683429.png" srcset="/img/loading.gif" lazyload alt="1729781683429"></p>
+<p><strong>解决方式</strong>：这个错误信息表明你的子模块的POM文件中指定的父POM的打包方式（packaging）不正确。在Maven中，当你定义一个父POM时，它的packaging类型应该是”pom”，因为父POM通常不包含可执行代码，而是用于定义构建和依赖管理的规则。</p>
+<p>在你的父POM文件中，你需要添加一个<code>&lt;packaging&gt;</code>元素，并将其值设置为”pom”。这样，Maven就知道这个POM是一个父POM，而不是一个包含代码的模块。</p>
+<p><strong>另外</strong>：如果我web模块想使用common模块里定义的类，只需要在dependcy里加上common模块就行了</p>
+<h3 id="2-多个模块的springboot项目，pom应该怎么配置，配置文件应该怎么配置，如何才能打包时一个jar包就能拥有所有模块的内容"><a href="#2-多个模块的springboot项目，pom应该怎么配置，配置文件应该怎么配置，如何才能打包时一个jar包就能拥有所有模块的内容" class="headerlink" title="2 多个模块的springboot项目，pom应该怎么配置，配置文件应该怎么配置，如何才能打包时一个jar包就能拥有所有模块的内容"></a>2 多个模块的springboot项目，pom应该怎么配置，配置文件应该怎么配置，如何才能打包时一个jar包就能拥有所有模块的内容</h3><h3 id="3-无效的源发行版"><a href="#3-无效的源发行版" class="headerlink" title="3 无效的源发行版"></a>3 无效的源发行版</h3><p><img src="/........%5Cimg%5C%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%5C1729783994694.png" srcset="/img/loading.gif" lazyload alt="1729783994694"></p>
+<p>解决方式，两个地方改Java版本</p>
+<p><img src="/........%5Cimg%5C%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%5C1729784215160.png" srcset="/img/loading.gif" lazyload alt="1729784215160"></p>
+<p><img src="/........%5Cimg%5C%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%5C1729784294886.png" srcset="/img/loading.gif" lazyload alt="1729784294886"></p>
+<p><strong>另外</strong>spring版本不对，修改位置</p>
+<p><img src="/........%5Cimg%5C%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%5C1729786526538.png" srcset="/img/loading.gif" lazyload alt="1729786526538"></p>
 
                 
               </div>
@@ -314,45 +297,6 @@
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E8%AE%A4%E7%9F%A5%E7%B1%BB/" class="category-chain-item">读书笔记-认知类</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E8%AE%A4%E7%9F%A5%E7%B1%BB/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/" class="category-chain-item">认知觉醒</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/" class="print-no-link">#认知觉醒</a>
-      
-        <a href="/tags/%E6%84%9F%E6%82%9F/" class="print-no-link">#感悟</a>
-      
-        <a href="/tags/%E7%AC%94%E8%AE%B0/" class="print-no-link">#笔记</a>
-      
-    </div>
   
 </div>
 
@@ -362,8 +306,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>前言-认知觉醒读后感</div>
-      <div>http://wenhu3.github.io/2024/04/07/前言-认知觉醒读后感/</div>
+      <div></div>
+      <div>http://wenhu3.github.io/2024/10/25/day1/</div>
     </div>
     <div class="license-meta">
       
@@ -375,7 +319,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年4月7日</div>
+          <div>2024年10月25日</div>
         </div>
       
       
@@ -407,18 +351,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/04/07/%E6%88%91%E6%98%AF%E8%B0%81-%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92%E8%AF%BB%E5%90%8E%E6%84%9F/" title="我是谁-认知觉醒读后感">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">我是谁-认知觉醒读后感</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/04/06/%E7%AC%AC%E4%B8%80%E7%AF%87%E7%AC%94%E8%AE%B0/" title="第一篇笔记">
-                        <span class="hidden-mobile">第一篇笔记</span>
+                      <a href="/2024/10/24/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%A1%B9%E7%9B%AE-%E8%83%A1%E6%96%87%E6%95%99%E5%AD%A6%E7%B3%BB%E7%BB%9F/%E5%90%8E%E7%AB%AF/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
